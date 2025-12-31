@@ -1,8 +1,20 @@
-\input{preamble}
+\documentclass{article}
+% \input{preamble}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=1in}
+\setcounter{secnumdepth}{0}
+\setlist[itemize]{noitemsep, topsep=0pt,leftmargin=*, itemsep=0pt}
+% \setlist[itemize]{}
+\setlength{\parindent}{0pt}
 
 \begin{document}
 
 \input{header}
+\section{Professional Summary}
+\input{summary.tex}
+
 \section*{Experience}
 \input{experience}
 
@@ -19,3 +31,8 @@
 \input{certifications}
 
 \end{document}
+
+% \begin{document}
+% Hello, LaTeX world from VS Code!
+% \end{document}
+ 
