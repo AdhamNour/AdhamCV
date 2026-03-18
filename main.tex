@@ -48,6 +48,7 @@
   topsep=2pt,
   itemsep=2pt,
   parsep=0pt,
+  beginpenalty=10000,
   label=\textcolor{teal}{\textbullet}
 }
 \setlist[itemize,2]{
@@ -59,16 +60,16 @@
 
 % ── Custom commands ───────────────────────────────────────────────────────────
 \newcommand{\jobtitle}[4]{%
-  \vspace{7pt}%
+  \vspace{7pt}\nopagebreak
   {\textbf{\textcolor{darktext}{#1}}%
   \textcolor{lightgray}{\ —\ }%
   \textbf{\textcolor{teal}{#2}}}%
   \hfill%
-  {\small\textit{\textcolor{lightgray}{#3\ ·\ #4}}}\\[-2pt]%
+  {\small\textit{\textcolor{lightgray}{#3\ ·\ #4}}}\par\nopagebreak\vspace{-2pt}\nopagebreak
 }
 
 \newcommand{\companydesc}[1]{%
-  {\small\textit{\textcolor{graytext}{#1}}}\vspace{3pt}%
+  \nopagebreak{\small\textit{\textcolor{graytext}{#1}}}\par\nopagebreak\vspace{3pt}\nopagebreak
 }
 
 \newcommand{\skillrow}[2]{%
@@ -97,7 +98,7 @@
 \input{experience/04_cae_junior}
 
 \input{sections/skills}
-\input{sections/opensource}
+% \input{sections/opensource}
 \input{sections/certifications}
 \input{sections/education}
 
