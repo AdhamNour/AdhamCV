@@ -7,29 +7,31 @@
 presence in Kuwait, Jordan, and Malaysia.}
 
 \begin{itemize}
-  \item Architected the migration from legacy Informatica and Oracle DB silos to a
-        \textbf{Medallion (Bronze/Silver/Gold) lakehouse}, designing scalable ELT pipelines
-        that power analytics, reporting, and data products with clearly defined SLAs.
+  \item Owned end-to-end data operations on the legacy \textbf{Informatica/Oracle} stack ---
+        built Python automation for DEI troubleshooting and schema reconciliation,
+        cutting manual validation effort by \textbf{60\%} --- then led the architectural
+        shift to \textbf{Airflow + PostgreSQL}, reducing pipeline processing time from
+        15 minutes to under 2 minutes (\textbf{87\% improvement}).
 
-  \item Designed \textbf{storage-compute decoupling} using Apache Iceberg on OCI Object
-        Storage (S3-compatible), significantly reducing licensing overhead and enabling
-        independent scaling on demand.
-
-  \item Integrated \textbf{Trino} as a high-performance query engine serving a unified
-        semantic layer consumed by BI tools, improving dashboard reliability and query
-        performance by up to 70\%.
+  \item Designed a \textbf{Medallion (Bronze/Silver/Gold)} data warehouse on PostgreSQL,
+        replacing fragmented Oracle DB silos with a single, layered architecture that
+        serves analytics, reporting, and data products with clearly defined SLAs.
 
   \item Built analytics-ready transformation layers with \textbf{Airflow} and \textbf{dbt},
         including dimensional models and reusable metric definitions enabling self-serve
         analytics for BI and product teams.
 
   \item Designed event-driven pipelines with \textbf{Apache Kafka}, Kafka Streams, and ksQL
-        for near real-time product and operational analytics, enforcing data contracts and
-        schema evolution for reliable downstream consumption.
+        for near real-time product and operational analytics --- improving data freshness
+        by \textbf{60\%} and cutting cross-system API calls by \textbf{70\%} via integrated
+        real-time flows, while enforcing data contracts and schema evolution for reliable
+        downstream consumption.
 
-  \item Developed Python automation tools to streamline Informatica DEI troubleshooting and
-        schema reconciliation, reducing manual validation effort by up to \textbf{60\%}.
+  \item Led SIT and UAT across both legacy and new-stack pipelines, resolving \textbf{95\%}
+        of issues pre-production --- ensuring continuity during the migration and stable
+        post-deployment operations.
 
-  \item Led SIT and UAT for critical data pipelines and BI reports, resolving \textbf{95\%}
-        of issues pre-production and ensuring stable post-deployment operations.
+  \item Delivered \textbf{40\%} reduction in overall data processing time and
+        \textbf{25\%} operational cost reduction by consolidating ETL, warehousing,
+        and real-time ingestion onto a unified \textbf{Airflow + PostgreSQL} stack.
 \end{itemize}
